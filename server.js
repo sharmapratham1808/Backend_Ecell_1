@@ -18,15 +18,6 @@ const corsOption = {
   credentials: true,
 };
 
-// Add this before other app.use() statements
-app.get("/", (req, res) => {
-  res.status(200).json({
-    message: "Welcome to the E-Cell API Server",
-    status: "online",
-    documentation: "Access API endpoints at /api/[auth|admin|form|data]"
-  });
-});
-
 app.use(cors(corsOption));
 app.use(express.json());
 
