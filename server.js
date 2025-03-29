@@ -30,7 +30,7 @@ app.use("/api/data", serviceRoute);
 
 app.use(error_middleware);
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 connectDb().then(() => {
   app.listen(PORT, () => {
     console.log(`server is runing at port ${PORT} `);
