@@ -13,7 +13,7 @@ const cors = require("cors");
 // lets handling the cors
 
 const corsOption = {
-  origin: "https://new-work-frontend.onrender.com",
+  origin: "http://localhost:5173/",
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
